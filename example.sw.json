@@ -1,0 +1,18 @@
+{
+  "id": "greetingWorkflow",
+  "version": "1.0",
+  "specVersion": "0.8",
+  "name": "Greeting Workflow",
+  "description": "A simple workflow that greets the user",
+  "start": "GreetState",
+  "states": [
+    {
+      "name": "GreetState",
+      "type": "inject",
+      "data": {
+        "greeting": "Hello, World!"
+      },
+      "end": true
+    }
+  ]
+}
